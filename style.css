@@ -2,3 +2,13 @@
     color: red;
     display: none;
 }
+#upgradesdiv {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+#moneydiv {
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
