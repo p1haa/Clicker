@@ -29,6 +29,11 @@ let autoctext = document.getElementById("autoctext");
 let autopower = 0;
 let autoptext = document.getElementById("autop");
 
+//Autoclicker LVL 10
+let autob10 = document.getElementById("autob10");
+let autoc10 = 50;
+let autoctext10 = document.getElementById("autoctext");
+
 // GOLDEN BUTTON!!
 let goldenb = document.getElementById("golden");
 let goldencost = 300
@@ -99,6 +104,19 @@ autob.onclick = function () {
         autopower += 1;
         money -= autoc;
         autoc += Math.floor(50 * (autopower * 0.15));
+        allElementRefresh();
+    }
+}
+
+autob10.onclick = function () {
+    if (money < autoc10) {
+        console.error("NOT ENOUGH MONEY");
+        broke.style.display = "block";
+    }
+    else {
+        autopower += 10;
+        money -= autoc10;
+        autoc += Math.floor(200 * (autopower * 0.015));
         allElementRefresh();
     }
 }
