@@ -45,7 +45,6 @@ function allElementRefresh() {
     //Element refresh
     if (moneypress === 50) {
         goldenb.style.display = "block";
-        allElementRefresh();
     }
 
 
