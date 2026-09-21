@@ -29,3 +29,20 @@
     background-color: darkgreen;
     border: goldenrod solid 9px;
 }
+#diamond {
+    display: none;
+    color: dodgerblue;
+    font-size: small;
+    height: 40px;
+    width: 250px;
+    background-color: rebeccapurple;
+    border: blue dotted 5px;
+}
+#diamond:active {
+    color: dodgerblue;
+    font-size: x-small;
+    height: 30px;
+    width: 180px;
+    background-color: rebeccapurple;
+    border: blue dotted 5px;
+}

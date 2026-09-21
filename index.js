@@ -4,9 +4,9 @@
 //MONEY VARS
 let button = document.getElementById("button");
 let moneytext = document.getElementById("money");
-let money = 0;
+let money = 10000000000;
 let broke = document.getElementById("broke");
-let moneypress = 0
+let moneypress = 0;
 
 //UPGRADE AND CLICK POWER VARS
 let clickpower = 1;
@@ -36,7 +36,10 @@ let autoctext10 = document.getElementById("autoctext10");
 
 // GOLDEN BUTTON!!
 let goldenb = document.getElementById("golden");
-let goldencost = 300
+let goldencost = 300;
+
+// DIAMOND BUTTON OMG
+let diamondb = document.getElementById("diamond");
 
 //A function to refresh all elements
 function allElementRefresh() {
@@ -51,6 +54,9 @@ function allElementRefresh() {
     //Element refresh
     if (moneypress === 50) {
         goldenb.style.display = "block";
+    }
+    if (moneypress === 150) {
+        diamondb.style.display = "block";
     }
 
 
@@ -126,6 +132,13 @@ goldenb.onclick = function () {
     goldenb.style.display = "none";
     moneypress = 0;
     money += goldencost;
+    allElementRefresh();
+}
+
+diamondb.onclick = function () {
+    diamondb.style.display = "none";
+    moneypress = 0;
+    money += 10000;
     allElementRefresh();
 }
 
