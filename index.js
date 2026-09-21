@@ -46,6 +46,7 @@ function allElementRefresh() {
     upgradectext10.textContent = "Cost: " + upgradec10 + "$";
     clickptext.textContent = "Click power: " + clickpower + "$ per click";
     autoctext.textContent = "Cost: " + autoc + "$";
+    autoctext10.textContent = "Cost: " + autoc10 + "$";
     autoptext.textContent = "Autoclicker power: " + autopower + "$ per second";
     //Element refresh
     if (moneypress === 50) {
