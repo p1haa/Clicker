@@ -12,3 +12,20 @@
     top: 0;
     left: 10px;
 }
+#golden {
+    display: none;
+    color: gold;
+    font-size: small;
+    height: 50px;
+    width: 150px;
+    background-color: darkgreen;
+    border: goldenrod solid 10px;
+}
+#golden:active {
+    color: gold;
+    font-size: x-small;
+    height: 40px;
+    width: 140px;
+    background-color: darkgreen;
+    border: goldenrod solid 9px;
+}
