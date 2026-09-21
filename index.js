@@ -4,7 +4,7 @@
 //MONEY VARS
 let button = document.getElementById("button");
 let moneytext = document.getElementById("money");
-let money = 10000000000;
+let money = 0;
 let broke = document.getElementById("broke");
 let moneypress = 0;
 
