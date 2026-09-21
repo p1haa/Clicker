@@ -117,7 +117,7 @@ autob10.onclick = function () {
     else {
         autopower += 10;
         money -= autoc10;
-        autoc += Math.floor(200 * (autopower * 0.015));
+        autoc10 += Math.floor(200 * (autopower * 0.015));
         allElementRefresh();
     }
 }
