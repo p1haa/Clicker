@@ -29,6 +29,11 @@ let autoctext = document.getElementById("autoctext");
 let autopower = 0;
 let autoptext = document.getElementById("autop");
 
+//Autoclicker LVL 10
+let autob10 = document.getElementById("autob10");
+let autoc10 = 200;
+let autoctext10 = document.getElementById("autoctext10");
+
 // GOLDEN BUTTON!!
 let goldenb = document.getElementById("golden");
 let goldencost = 300
@@ -41,6 +46,7 @@ function allElementRefresh() {
     upgradectext10.textContent = "Cost: " + upgradec10 + "$";
     clickptext.textContent = "Click power: " + clickpower + "$ per click";
     autoctext.textContent = "Cost: " + autoc + "$";
+    autoctext10.textContent = "Cost: " + autoc10 + "$";
     autoptext.textContent = "Autoclicker power: " + autopower + "$ per second";
     //Element refresh
     if (moneypress === 50) {
@@ -99,6 +105,19 @@ autob.onclick = function () {
         autopower += 1;
         money -= autoc;
         autoc += Math.floor(50 * (autopower * 0.15));
+        allElementRefresh();
+    }
+}
+
+autob10.onclick = function () {
+    if (money < autoc10) {
+        console.error("NOT ENOUGH MONEY");
+        broke.style.display = "block";
+    }
+    else {
+        autopower += 10;
+        money -= autoc10;
+        autoc10 += Math.floor(200 * (autopower * 0.015));
         allElementRefresh();
     }
 }
