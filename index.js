@@ -31,7 +31,7 @@ let autoptext = document.getElementById("autop");
 
 //Autoclicker LVL 10
 let autob10 = document.getElementById("autob10");
-let autoc10 = 50;
+let autoc10 = 200;
 let autoctext10 = document.getElementById("autoctext10");
 
 // GOLDEN BUTTON!!
