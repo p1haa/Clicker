@@ -67,7 +67,6 @@ button.onclick = function () {
 //Upgrade buttons and money check
 upgradeb1.onclick = function () {
     if (money < upgradec1) {
-        console.error("NOT ENOUGH MONEY");
         broke.style.display = "block";
     }
     else {
@@ -80,7 +79,6 @@ upgradeb1.onclick = function () {
 
 upgradeb10.onclick = function () {
     if (money < upgradec10) {
-        console.error("NOT ENOUGH MONEY");
         broke.style.display = "block";
     }
     else {
@@ -98,7 +96,6 @@ upgradeb10.onclick = function () {
 
 autob.onclick = function () {
     if (money < autoc) {
-        console.error("NOT ENOUGH MONEY");
         broke.style.display = "block";
     }
     else {
@@ -111,7 +108,6 @@ autob.onclick = function () {
 
 autob10.onclick = function () {
     if (money < autoc10) {
-        console.error("NOT ENOUGH MONEY");
         broke.style.display = "block";
     }
     else {
@@ -125,6 +121,7 @@ autob10.onclick = function () {
 goldenb.onclick = function () {
     goldenb.style.display = "none";
     moneypress = 0;
+    goldencost *= 2;
     money += goldencost;
     allElementRefresh();
 }
