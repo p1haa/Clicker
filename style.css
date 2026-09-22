@@ -13,6 +13,7 @@
     left: 10px;
 }
 #golden {
+    margin-top: 10px;
     display: none;
     color: gold;
     font-size: small;
@@ -22,6 +23,7 @@
     border: goldenrod solid 10px;
 }
 #golden:active {
+    margin-top: 10px;
     color: gold;
     font-size: x-small;
     height: 40px;
@@ -30,6 +32,7 @@
     border: goldenrod solid 9px;
 }
 #diamond {
+    margin-top: 10px;
     display: none;
     color: dodgerblue;
     font-size: small;
@@ -39,6 +42,7 @@
     border: blue dotted 5px;
 }
 #diamond:active {
+    margin-top: 10px;
     color: dodgerblue;
     font-size: x-small;
     height: 30px;
