@@ -7,6 +7,7 @@ let moneytext = document.getElementById("money");
 let money = 0;
 let broke = document.getElementById("broke");
 let moneypress = 0;
+let clicksperclick = 1;
 
 //UPGRADE AND CLICK POWER VARS
 let clickpower = 1;
@@ -33,6 +34,11 @@ let autoptext = document.getElementById("autop");
 let autob10 = document.getElementById("autob10");
 let autoc10 = 200;
 let autoctext10 = document.getElementById("autoctext10");
+
+//Double click!!!
+let duoclickdiv = document.getElementById("doublediv");
+let duoclickb = document.getElementById("duoclickb");
+let doubleonoroff = document.getElementById("doubleonoroff");
 
 // GOLDEN BUTTON!!
 let goldenb = document.getElementById("golden");
@@ -64,9 +70,9 @@ function allElementRefresh() {
 
 //Adds money and refreshes text
 button.onclick = function () {
-    money += clickpower;
+    money += clickpower * clicksperclick;
     broke.style.display = "none";
-    moneypress += 1;
+    moneypress += clicksperclick;
     allElementRefresh();
 }
 
@@ -122,6 +128,14 @@ autob10.onclick = function () {
         autoc10 += Math.floor(200 * (autopower * 0.015));
         allElementRefresh();
     }
+}
+
+duoclickb.onclick = function () {
+    clicksperclick *= 2;
+    money -= 10500;
+    doubleonoroff.textContent = "DOUBLE CLICK: ON (yay you bought it)";
+    duoclickdiv.remove();
+    allElementRefresh();
 }
 
 goldenb.onclick = function () {
