@@ -131,7 +131,7 @@ autob10.onclick = function () {
 }
 
 duoclickb.onclick = function () {
-    if (money <= 10500) {
+    if (money < 10500) {
         broke.style.display = "block";
     }
     else {
