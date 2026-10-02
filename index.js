@@ -61,7 +61,7 @@ function allElementRefresh() {
     if (moneypress === 50) {
         goldenb.style.display = "block";
     }
-    if (moneypress === 150) {
+    if (moneypress === 400) {
         diamondb.style.display = "block";
     }
 
