@@ -131,18 +131,23 @@ autob10.onclick = function () {
 }
 
 duoclickb.onclick = function () {
-    clicksperclick *= 2;
-    money -= 10500;
-    doubleonoroff.textContent = "DOUBLE CLICK: ON (yay you bought it)";
-    duoclickdiv.remove();
-    allElementRefresh();
+    if (money <= 10500) {
+        broke.style.display = "block";
+    }
+    else {
+        clicksperclick *= 2;
+        money -= 10500;
+        doubleonoroff.textContent = "DOUBLE CLICK: ON (yay you bought it)";
+        duoclickdiv.remove();
+        allElementRefresh();
+    }
 }
 
 goldenb.onclick = function () {
     goldenb.style.display = "none";
     moneypress = 0;
-    goldencost *= 2;
     money += goldencost;
+    goldencost *= 2;
     allElementRefresh();
 }
 
